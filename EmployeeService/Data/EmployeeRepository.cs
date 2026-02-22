@@ -13,7 +13,7 @@ namespace EmployeeService.Data
         public EmployeeRepository()
         {
             _connectionString =
-                ConfigurationManager.ConnectionStrings["Test"].ConnectionString;
+                ConfigurationManager.ConnectionStrings["EmployeeDb"].ConnectionString;
         }
 
         public List<EmployeeDto> GetEmployeesById(int Id)
